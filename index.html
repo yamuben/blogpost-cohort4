@@ -12,12 +12,38 @@
 
     <div class="topnav">
         <a href="#" class="active"> Home</a>
-        <a href="#"> Signin</a>
+        <a href="#"  onclick="document.getElementById('showmodal').style.display='block'"> Signin</a>
         <a href="#"> About us</a>
 
     </div>
 
 </div>
+
+<div id="showmodal" class="signinModal">
+
+    <div class="siginCard">
+
+        <span id="close" onclick="document.getElementById('showmodal').style.display='none'" class="close" title="close Modal">&times;</span>
+        <h1>Login Form</h1>
+
+        <label> <b> Username:</b></label>
+        <input class="inputLogin" type="text" placeholder="enter Username" name="uname" />
+
+        <label> <b> Password:</b></label>
+        <input class="inputLogin" type="password" placeholder="enter Password" name="password" />
+
+        <button type="submit" class="loginbutton"> Login</button> <br/>
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember">
+            Rembember me.
+        </label>
+
+    </div>
+
+</div>
+
+
 <div class="container">
 
     <div class="sidenav">
@@ -49,7 +75,7 @@
                     <h1>Learn About Food</h1>
 
                     <p>Bavaria, officially the Free State of Bavaria, is a landlocked state in the south-east of Germany. With an area of 70,550.19 square kilometres,</p>
-                    <a href="#">Read more..</a>
+                    <a href="./pages/viewOneBlog.html">Read more..</a>
                 </div>
                 
             </div>
@@ -120,5 +146,7 @@
     </div>
 
 </div>
+
+<script src="./js/myscript.js" ></script>
     </body>
 </html>
